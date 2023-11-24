@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtdd_sample_impl.a CMakeFiles/tdd_sample_impl.dir/module/Atm.cpp.o
+/usr/bin/ranlib libtdd_sample_impl.a

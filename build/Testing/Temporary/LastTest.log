@@ -1,0 +1,60 @@
+Start testing: Nov 24 18:24 JST
+----------------------------------------------------------
+1/1 Testing: test1
+1/1 Test: test1
+Command: "/home/taki/windows/CATdd/target_project/tdd-sample/build/tdd_sample_test"
+Directory: /home/taki/windows/CATdd/target_project/tdd-sample/build
+"test1" start time: Nov 24 18:24 JST
+Output:
+----------------------------------------------------------
+Running main() from /home/taki/windows/CATdd/target_project/tdd-sample/build/googletest-src/googletest/src/gtest_main.cc
+[0;32m[==========] [mRunning 7 tests from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m7 tests from AtmTest
+[0;32m[ RUN      ] [mAtmTest.getBalanceDefaultTest
+[0;32m[       OK ] [mAtmTest.getBalanceDefaultTest (0 ms)
+[0;32m[ RUN      ] [mAtmTest.getBalanceInitTest
+[0;32m[       OK ] [mAtmTest.getBalanceInitTest (0 ms)
+[0;32m[ RUN      ] [mAtmTest.transferTest
+[0;32m[       OK ] [mAtmTest.transferTest (0 ms)
+[0;32m[ RUN      ] [mAtmTest.transferLargerTest
+[0;32m[       OK ] [mAtmTest.transferLargerTest (0 ms)
+[0;32m[ RUN      ] [mAtmTest.transferMinusTest
+/home/taki/windows/CATdd/target_project/tdd-sample/test/AtmTest.cpp:37: Failure
+Expected equality of these values:
+  atm.getBalance()
+    Which is: 31000
+  29000
+
+[0;31m[  FAILED  ] [mAtmTest.transferMinusTest (0 ms)
+[0;32m[ RUN      ] [mAtmTest.depositTest
+[0;32m[       OK ] [mAtmTest.depositTest (0 ms)
+[0;32m[ RUN      ] [mAtmTest.depositMinusTest
+/home/taki/windows/CATdd/target_project/tdd-sample/test/AtmTest.cpp:51: Failure
+Expected equality of these values:
+  atm.getBalance()
+    Which is: 19
+  20
+
+[0;31m[  FAILED  ] [mAtmTest.depositMinusTest (0 ms)
+[0;32m[----------] [m7 tests from AtmTest (0 ms total)
+
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m7 tests from 1 test suite ran. (0 ms total)
+[0;32m[  PASSED  ] [m5 tests.
+[0;31m[  FAILED  ] [m2 tests, listed below:
+[0;31m[  FAILED  ] [mAtmTest.transferMinusTest
+[0;31m[  FAILED  ] [mAtmTest.depositMinusTest
+
+ 2 FAILED TESTS
+libgcov profiling error:/home/taki/windows/CATdd/target_project/tdd-sample/build/CMakeFiles/tdd_sample_test.dir/module/Atm.cpp.gcda:overwriting an existing profile data with a different timestamp
+libgcov profiling error:/home/taki/windows/CATdd/target_project/tdd-sample/build/CMakeFiles/tdd_sample_test.dir/test/AtmTest.cpp.gcda:overwriting an existing profile data with a different timestamp
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Failed.
+"test1" end time: Nov 24 18:24 JST
+"test1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 24 18:24 JST
