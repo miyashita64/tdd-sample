@@ -1,1 +1,0 @@
-/usr/bin/c++ -g -fprofile-arcs -ftest-coverage -std=c++17 -rdynamic CMakeFiles/etrobocon2022_test.dir/test/AtmTest.cpp.o CMakeFiles/etrobocon2022_test.dir/test/MileageTest.cpp.o CMakeFiles/etrobocon2022_test.dir/module/Atm.cpp.o CMakeFiles/etrobocon2022_test.dir/module/Mileage.cpp.o -o etrobocon2022_test  lib/libgtest_main.a lib/libgtest.a 

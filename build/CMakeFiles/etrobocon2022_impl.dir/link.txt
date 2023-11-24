@@ -1,2 +1,0 @@
-/usr/bin/ar qc libetrobocon2022_impl.a CMakeFiles/etrobocon2022_impl.dir/module/Atm.cpp.o CMakeFiles/etrobocon2022_impl.dir/module/Mileage.cpp.o
-/usr/bin/ranlib libetrobocon2022_impl.a
