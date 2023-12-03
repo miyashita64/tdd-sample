@@ -1,7 +1,6 @@
-# 以下のページとetrobocon2021を参考にいくつか変更
 # https://github.com/google/googletest/blob/main/googletest/README.md
 
-cmake_minimum_required(VERSION 3.0...3.21)
+cmake_minimum_required(VERSION 3.12)
 project(YourProjectName VERSION 1.0.0)
 
 # CMP0048のポリシーをセット
@@ -75,7 +74,7 @@ file(GLOB SRC_FILES
     ${PROJECT_SOURCE_DIR}/module/*/*.cpp
     ${PROJECT_SOURCE_DIR}/test/dummy/*.cpp
 )
-add_library(etrobocon2022_impl ${SRC_FILES})
+add_library(tdd_sample_impl ${SRC_FILES})
 
 #-------------------
 # Test
@@ -83,6 +82,6 @@ add_library(etrobocon2022_impl ${SRC_FILES})
 enable_testing()
 file(GLOB TEST_SRC_FILES ${PROJECT_SOURCE_DIR}/test/*.cpp)
 
-add_executable(etrobocon2022_test ${TEST_SRC_FILES} ${SRC_FILES})
-target_link_libraries(etrobocon2022_test gtest_main)
-add_test(test1 etrobocon2022_test)
+add_executable(tdd_sample_test ${TEST_SRC_FILES} ${SRC_FILES})
+target_link_libraries(tdd_sample_test gtest_main)
+add_test(test1 tdd_sample_test)
